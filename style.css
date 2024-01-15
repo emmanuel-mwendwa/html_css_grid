@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    width: min(95%, 70rem);
+    margin: auto;
+    margin-top: 100px;
+}
+
+.post-container {
+    padding: 22px;
+    /* margin: 10px; */
+    border-radius: 12px;
+    color: white;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.user-details {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-name {
+    font-style: bold;
+}
+
+.user-profession {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+}
+
+.user-details .user-profile-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid purple;
+}
+
+.post-title {
+    margin: 16px 0px;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.post-content {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+.daniel {
+    background-color: rebeccapurple;
+    grid-column: span 2;
+}
+
+.jonathan {
+    background-color: rgb(72, 85, 106);
+}
+
+.kira {
+    background-color: white;
+    grid-row: span 2;
+}
+
+.posts .kira  .post-content,
+.posts .jeanette .post-content{
+    color: rgba(72, 85, 106, 0.5);
+}
+
+.posts .kira div,
+.posts .jeanette div {
+    color: rgb(72, 85, 106);
+}
+
+.posts .kira div .user-profession,
+.posts .jeanette div .user-profession {
+    color: rgba(72, 85, 106, 0.4);
+}
+
+.jeanette {
+    background-color: white;
+}
+
+.patrick {
+    background-color: rgb(4, 4, 48);
+    grid-column: span 2;
+}
